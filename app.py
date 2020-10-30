@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', lista=range(15))
 
 @app.route('/<nome>')
 def ola_com_nome(nome):
